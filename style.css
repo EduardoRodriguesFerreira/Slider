@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(imagem/papel-de-parede-abstrato-nebulosa-ultra-detalhado-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(6px);
+   
+}
+
+#conteudo{
+   display: flex;
+   justify-content: center;
+   
+}
+#conteudo img{
+
+width: 50px;
+  
+}
+
+.conteudo2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 150px;
+   
+}
+.flecha2{
+    transform: rotate(540deg);
+}
+
+.flecha{
+    width: 40px;
+}
+
+#slider{
+    border-radius: 50px;
+}
+
+#slider img{
+    width: 400px;
+    border-radius: 50px;
+    align-self: center;
+  
+    
+}
+
+.thelast{
+    position:absolute;
+    visibility: hidden;
+    margin-left: -400px;
+    margin-top: -200px;
+    backdrop-filter: blur(6px);
+   
+}
+#mario{
+    
+    visibility: visible;
+}
+
+
+button{
+    background:transparent;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: rgb(182, 148, 246);
+}
+button:hover{
+    background-color: rgb(251, 7, 64);
+}
+.mario-blur{
+    filter: blur(6px);
+    
+}
+.detroit{
+    position: absolute;
+    margin-left: -470px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+
+@keyframes rotaçao {
+    to{
+        transform: rotate(0deg);
+      
+     
+    }
+    from{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    to{
+        transform: scale(1.0);
+      
+        transition: 1s;
+    }
+    from{
+        transform: scale(0.8);
+}
+}
+
+@keyframes color{
+    to{
+        border: cornflowerblue;
+    }
+    from{
+       border-color: crimson;
+    }
+}
+.rotação{
+    animation-name: rotaçao ;
+    animation: rotaçao 5s  linear 1;
+}
+
+.puse{
+    animation-name: pulse;
+    animation: pulse 5s linear infinite;
+}
